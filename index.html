@@ -11,6 +11,52 @@
 			crossorigin="anonymous"
 		/>
 		<style>
+			@media (max-width: 600px) {
+				.all-card {
+					display: grid;
+					background-color: rgb(211, 197, 196);
+					justify-content: center;
+
+					align-items: center;
+					height: 450vh;
+					grid-template-columns: auto;
+				}
+				.card {
+					background-color: aliceblue;
+				}
+			}
+			@media only screen and (min-width: 600px) {
+				.all-card {
+					display: grid;
+					background-color: rgb(211, 197, 196);
+					justify-content: center;
+					gap: 30px;
+					align-items: center;
+					/* height: 40vh; */
+					grid-template-columns: auto auto;
+				}
+			}
+
+			@media only screen and (min-width: 768px) {
+				.all-card {
+					display: grid;
+					background-color: rgb(211, 197, 196);
+					justify-content: center;
+					gap: 30px;
+					align-items: center;
+					height: 40vh;
+					grid-template-columns: auto auto auto auto;
+				}
+				/* .all-card {
+					background-color: rgb(211, 197, 196);
+					display: grid;
+					justify-content: center;
+					gap: 30px;
+					align-items: center;
+					height: 40vh;
+				} */
+			}
+
 			.card {
 				width: 20vw;
 				height: 35vh;
@@ -48,16 +94,7 @@
 			<input id="websiteLink" type="text" placeholder="Enter any website link" style="width: 50%; height: 35px" />
 		</div>
 
-		<div
-			style="
-				background-color: rgb(211, 197, 196);
-				display: flex;
-				justify-content: center;
-				gap: 30px;
-				align-items: center;
-				height: 40vh;
-			"
-		>
+		<div class="all-card">
 			<div class="card">
 				<div class="row g-0">
 					<div class="col-md-4">
@@ -223,6 +260,7 @@
 				</div>
 			</div>
 		</div>
+
 		<footer style="height: 30vh; display: flex; align-items: end">
 			<div class="text-center p-3" style="background-color: rgb(211, 197, 196); width: 100%">© 2023</div>
 		</footer>
